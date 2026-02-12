@@ -104,7 +104,7 @@ QUESTIONS = [
     },
     {
         "question": "How frequently does your inventory turn over, on average?  (If unsure, choose the closest estimate.) ",
-        "options": ["Monthly or faster", "Every 2–3 months", "Every 4–6 months", "Less than twice per yearstreamlit run"],
+        "options": ["Monthly or faster", "Every 2–3 months", "Every 4–6 months", "Less than twice per year"],
         "scores": [20, 15, 8, 0]
     }
 ]
