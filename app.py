@@ -455,14 +455,14 @@ def calculate_score():
     return total_score, max_score, percentage
 
 def score_band(percentage):
-    if percentage >= 75:
+    if percentage >= 70:
         return {
             "label": "Healthy",
             "color": "#16a34a",
             "headline": "Your Inventory Is in Good Shape",
             "message": "You have solid control over your inventory, with only minor optimization opportunities."
         }
-    elif percentage >= 45:
+    elif percentage >= 40:
         return {
             "label": "At Risk",
             "color": "#f97316",
