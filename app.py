@@ -5,6 +5,15 @@ from datetime import datetime
 import requests
 
 # -------------------------------
+# Endpoint to ping and keep app awake; Endpoint =  https://inventory-health-check.streamlit.app/?ping=1 
+# -------------------------------
+
+if st.query_params.get("ping") == "1":
+    st.write("OK")
+    st.stop()
+
+
+# -------------------------------
 # Baserow Configuration
 # -------------------------------
 BASEROW_BASE_URL = st.secrets.get('BASEROW_BASE_URL', 'https://baserowapp.goxmit.com/api')
